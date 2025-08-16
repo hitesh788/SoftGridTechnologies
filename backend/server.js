@@ -13,15 +13,16 @@ const adminAuthRoutes = require("./routes/adminAuthRoutes");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// ✅ Allow both Vercel frontend & local dev
+// ✅ Allowed origins
 const allowedOrigins = [
   "https://softgridtechnologies.site", // frontend panel
-  "https://adminn-teal.vercel.app", // admin panel
+  "https://adminn-teal.vercel.app",    // admin panel
   "https://softgridtechnologiesss.vercel.app",
   "http://localhost:5173",
-  "http://localhost:5174", 
+  "http://localhost:5174",
 ];
 
+// ✅ CORS middleware
 app.use(
   cors({
     origin: function (origin, callback) {
@@ -33,17 +34,22 @@ app.use(
     },
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // allow cookies or auth headers if needed
   })
 );
 
+// ✅ Handle preflight requests
+app.options("*", cors());
+
+// ✅ Body parser
 app.use(express.json());
 
-// ✅ Default route to prevent 404 on root
+// ✅ Default root route
 app.get("/", (req, res) => {
   res.send("✅ SoftGrid Technologies Backend is running!");
 });
 
-// API Routes
+// ✅ API routes
 app.use("/api/subscribers", subscribeRoutes);
 app.use("/api/contacts", contactRoutes);
 app.use("/api/admin", adminRoutes);
@@ -51,8 +57,7 @@ app.use("/api/blog-subscribers", blogSubscriberRoutes);
 app.use("/api/advertise-with-us", advertiseWithUsRoutes);
 app.use("/api/admin-auth", adminAuthRoutes);
 
-
-// MongoDB Connection
+// ✅ MongoDB Connection
 const mongoURI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/softgrid";
 
 mongoose
@@ -69,6 +74,7 @@ mongoose
   )
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
+// ✅ Start server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });

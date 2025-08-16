@@ -17,6 +17,7 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   "https://softgridtechnologies.site", // frontend panel
   "https://adminn-teal.vercel.app", // admin panel
+  "https://softgridtechnologiesss.vercel.app",
   "http://localhost:5173",
   "http://localhost:5174", 
 ];

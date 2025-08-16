@@ -1,0 +1,74 @@
+.tat-terms-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.tat-terms-heading {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tat-terms-updated {
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.tat-terms-subheading {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.tat-terms-container p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.tat-terms-container ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.tat-terms-container li {
+  list-style-type: disc;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.tat-terms-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.tat-terms-container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .tat-terms-container {
+    padding: 20px 15px;
+  }
+
+  .tat-terms-heading {
+    font-size: 2rem;
+  }
+
+  .tat-terms-subheading {
+    font-size: 1.5rem;
+  }
+
+  .tat-terms-container p,
+  .tat-terms-container li {
+    font-size: 0.95rem;
+  }
+}

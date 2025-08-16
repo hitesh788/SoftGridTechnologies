@@ -1,0 +1,88 @@
+.flight-card {
+  width: 305px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.flight-image {
+  position: relative;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Blurred background area */
+.flight-info-blur {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4); /* darker overlay */
+  backdrop-filter: blur(1px);
+}
+
+.flight-info {
+  position: relative;
+  color: white;
+}
+
+.flight-info h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.economy {
+  margin: 2px 0;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.details {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.highlight {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cards-container {
+  max-width: 1300px; /* So they don’t stretch wild */
+  margin: 0 auto; /* Center horizontally */
+  display: flex; /* Flexbox makes side-by-side easy */
+  gap: 20px; /* Space between cards */
+  flex-wrap: wrap; /* Wrap to next line on smaller screens */
+  justify-content: center; /* Center cards if less than 4 fit */
+}
+.wa-section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.wa-section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.wa-section-subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto;
+}

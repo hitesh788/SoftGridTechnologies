@@ -1,0 +1,161 @@
+.footer {
+  background-color: #111827;
+  color: #ccc;
+  padding: 3rem 1rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.footer-logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.footer-text {
+  margin-bottom: 1rem;
+  color: #aaa;
+  font-size: 17px;
+}
+
+.footer-socials a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #fff;
+}
+
+.footer-title {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.9rem;
+}
+
+.footer ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: white;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.subscribe-form input {
+  font-family: "Inter";
+  width: 100%;
+  max-width: 400px;
+  padding: 0.9rem;
+  background: #1f2937;
+  border: 1px solid #374151;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe-form button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  padding: 0.8rem;
+  background: #facc15;
+  border: none;
+  color: #111827;
+  border-radius: 15px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+  background: #fcd34d;
+}
+
+.footer-status {
+  margin-top: 0.5rem;
+  color: #38bdf8;
+}
+
+.partnered-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #374151;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-links span {
+  color: #555;
+}
+
+.footer-socials a:hover:nth-child(1) {
+  color: #1877f2;
+}
+
+.footer-socials a:hover:nth-child(2) {
+  color: #0a66c2;
+}
+
+.footer-socials a:hover:nth-child(3) {
+  color: #e1306c;
+}
+
+.footer-socials a:hover:nth-child(4) {
+  color: #1da1f2;
+}
+
+
+.footer-socials a:hover:nth-child(5) {
+  color: #636363;
+}

@@ -1,0 +1,345 @@
+/* Base Styles */
+.awu-advertise-page {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Section Header Styles */
+.awu-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.awu-section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+.awu-section-subtitle {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.awu-advertise-hero {
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  padding: 200px 20px;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.awu-advertise-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/advertiseWithUs.jpg") center/cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+.awu-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.awu-advertise-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.awu-hero-subtitle {
+  font-size: 1.7rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.awu-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.awu-btn-primary,
+.awu-btn-secondary {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  background-color: #fcfbf9;
+}
+
+.awu-btn-primary {
+  background-color: #ffc107;
+  color: black;
+}
+
+.awu-btn-primary:hover {
+  background-color: #fcfbf9;
+  color: black;
+}
+
+.awu-btn-secondary {
+  color: #111;
+}
+
+.awu-btn-secondary:hover {
+  background-color: #ffc107;
+  color: black;
+}
+
+/* Stats Section */
+.awu-stats-section {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 50px 0;
+  padding: 5px 0;
+}
+
+.awu-stat-item {
+  padding: 0 10px;
+}
+
+.awu-stat-item h3 {
+  font-size: 2.5rem;
+  color: navy;
+  margin-bottom: 10px;
+}
+
+.awu-stat-item p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+.awu-advertise-benefits {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.awu-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.awu-section-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.awu-section-subtitle {
+  font-size: 16px;
+  color: #555;
+}
+
+.aws-testimonials-section {
+  padding: 50px 10px;
+  background-color: #fff;
+}
+.aws-testimonials-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.aws-testimonials-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #facc15;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.aws-testimonials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+@media (min-width: 768px) {
+  .aws-testimonials-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.aws-testimonial-card {
+  width: 320px;
+  border: 1px solid #d1d5db;
+  padding: 40px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aws-testimonial-image {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.aws-testimonial-name {
+  font-size: 18px;
+  color: #111827;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.aws-testimonial-role {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.aws-testimonial-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.aws-testimonial-text {
+  text-align: center;
+  font-size: 15px;
+  color: #6b7280;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .awu-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .awu-testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.awu-advertise-benefits {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.awu-section-header {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.awu-section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.awu-section-subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+.awu-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.awu-benefit-card {
+  position: relative;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Blur & darken bottom area */
+.awu-benefit-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.awu-benefit-overlay {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+
+.awu-benefit-overlay h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.awu-benefit-overlay p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .awu-advertise-hero {
+    padding: 240px 0px;
+  }
+
+  .awu-advertise-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .awu-hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .awu-stats-section {
+    flex-direction: column;
+  }
+
+  .awu-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .awu-advertise-hero h1 {
+    font-size: 2rem;
+  }
+
+  .awu-section-header h2 {
+    font-size: 1.8rem;
+  }
+}

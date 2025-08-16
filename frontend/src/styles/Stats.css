@@ -1,0 +1,48 @@
+.home-bottom-stats-section {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-bottom-stats-container {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.home-bottom-stat-box {
+
+  flex: 1 1 20px;
+}
+
+.home-bottom-stat-number {
+  font-size: 32px;
+  font-weight: 800;
+  color: #7c3aed; 
+  margin-bottom: 8px;
+}
+
+.home-bottom-stat-label {
+  font-size: 16px;
+  color: #374151; 
+}
+
+@media (max-width: 768px) {
+  .home-bottom-stats-container {
+    flex-direction: column;
+  }
+
+  .home-bottom-stat-number {
+    font-size: 28px;
+  }
+
+  .home-bottom-stat-label {
+    font-size: 15px;
+    
+  }
+
+}

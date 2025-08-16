@@ -1,0 +1,152 @@
+/* Section Wrapper */
+.services-wrapper {
+  padding: 2rem 1rem;
+  max-width: 81.25rem;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Inter";
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 3rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+/* Card Styling */
+.service-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  height: 24rem; /* Removes fixed min-height */
+}
+
+/* Icon + Title vertical stack */
+.icon-title-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+/* Icon Placeholder */
+.icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9ff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  color: navy;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.service-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+/* Description */
+.service-desc {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  min-height: auto;
+}
+
+/* Features */
+.feature-list {
+  margin-top: 1.5rem;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* Tick Icon */
+.tick-icon {
+  color: green;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Button */
+.learn-more {
+  display: flex;
+  align-items: start;
+  background: none;
+  color: #6d28d9;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+  font-size: 1rem;
+}
+.learnmore-icon{
+    margin-top: 2px;
+    margin-left: 0.2rem;
+}
+
+.learn-more:hover {
+  color: #4c1d95;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 360px) {
+  .service-desc {
+  font-size: 1rem;
+  color: #4b5563;
+  min-height: auto;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #374151;
+}
+
+.service-card{
+ height:26rem;  
+}
+
+}

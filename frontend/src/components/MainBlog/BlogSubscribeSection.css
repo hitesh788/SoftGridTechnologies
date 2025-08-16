@@ -1,0 +1,68 @@
+.blog-subscribe-section {
+  width: 100%;
+  padding: 20px 8px; /* py-20 px-2 */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-text {
+  font-size: 3rem;
+  color: navy; /* indigo-500 */
+  font-weight: 500;
+}
+
+.subscribe-heading {
+  max-width: 1300px; /* ~max-w-lg */
+  font-weight: 600;
+  font-size: 2.5rem; /* text-4xl */
+  line-height: 44px;
+  margin-top: 8px;
+}
+
+.subscribe-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  border: 1px solid navy; /* slate-600 */
+  border-radius: 9999px;
+  height: 56px; /* h-14 */
+  max-width: 448px; /* max-w-md */
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.subscribe-input-container:focus-within {
+  outline: 1px solid navy; /* indigo-600 */
+}
+
+.subscribe-input {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-radius: 9999px;
+  padding: 0 16px;
+  height: 100%;
+  flex: 1;
+  font-size: 0.875rem;
+}
+
+.subscribe-button {
+  background-color: navy; /* indigo-600 */
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  height: 44px; /* h-11 */
+  margin-right: 4px;
+  padding: 0 32px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #ffc107;
+  color: black;
+}

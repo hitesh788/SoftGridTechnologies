@@ -1,0 +1,59 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.not-found-content {
+  max-width: 1300px;
+}
+
+.not-found-title {
+  font-size: 10rem;
+  color: navy;
+  margin-bottom: 1rem;
+}
+
+.not-found-message {
+  font-size: 2rem;
+  color: #555;
+  margin-bottom: 4rem;
+}
+
+.not-found-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.not-found-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  color: black;
+  border: 2px solid navy;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.not-found-btn:hover {
+  background-color: #c3c3f3;
+}
+
+.not-found-btn.outline {
+  background-color: transparent;
+  color: black;
+  border: 2px solid navy;
+}
+
+.not-found-btn.outline:hover {
+  background-color: #c3c3f3;
+}
